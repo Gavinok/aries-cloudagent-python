@@ -12,22 +12,25 @@
         <link rel="prev" href="../Endorser/">
       
       
-        <link rel="next" href="../SelectiveDisclosureJWTs/">
+        <link rel="next" href="../W3cCredentials/">
+      
+      
+        
       
       
       <link rel="icon" href="https://raw.githubusercontent.com/hyperledger/aries-rfcs/main/collateral/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
-        <title>Using W3C JSON-LD Signed Credentials - Hyperledger Aries ACA-Py Docs</title>
+        <title>Using W3C JSON-LD Signed Credentials - ACA-Py Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -50,7 +53,6 @@
     
       
 
-    
     
     
   </head>
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Hyperledger Aries ACA-Py Docs" class="md-header__button md-logo" aria-label="Hyperledger Aries ACA-Py Docs" data-md-component="logo">
+    <a href="../.." title="ACA-Py Docs" class="md-header__button md-logo" aria-label="ACA-Py Docs" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/hyperledger/aries-rfcs/main/collateral/Hyperledger_Aries_Logo_White.png" alt="logo">
 
@@ -105,7 +107,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Hyperledger Aries ACA-Py Docs
+            ACA-Py Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -149,11 +151,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -185,16 +189,17 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
-        <a href="https://github.com/hyperledger/aries-cloudagent-python" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/openwallet-foundation/acapy" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    hyperledger/aries-cloudagent-python
+    openwallet-foundation/acapy
   </div>
 </a>
       </div>
@@ -211,11 +216,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
-        <a href="../../aca-py.org/" class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
+  
   
   Welcome!
 
@@ -228,6 +235,7 @@
         
   
   
+  
     
   
   
@@ -236,6 +244,7 @@
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../DevReadMe/" class="md-tabs__link">
           
+  
   
   Features
 
@@ -249,11 +258,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
-        <a href="../../demo/Aries-Workshop/" class="md-tabs__link">
+        <a href="../../demo/ACA-Py-Workshop/" class="md-tabs__link">
           
+  
   
   Demos
 
@@ -267,11 +278,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../gettingStarted/" class="md-tabs__link">
           
+  
   
   Getting Started
 
@@ -285,11 +298,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../deploying/deploymentModel/" class="md-tabs__link">
           
+  
   
   Deploying
 
@@ -303,11 +318,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../testing/UnitTests/" class="md-tabs__link">
           
+  
   
   Testing/Troubleshooting
 
@@ -321,11 +338,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../CONTRIBUTING/" class="md-tabs__link">
           
+  
   
   Contributing
 
@@ -363,22 +382,22 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Hyperledger Aries ACA-Py Docs" class="md-nav__button md-logo" aria-label="Hyperledger Aries ACA-Py Docs" data-md-component="logo">
+    <a href="../.." title="ACA-Py Docs" class="md-nav__button md-logo" aria-label="ACA-Py Docs" data-md-component="logo">
       
   <img src="https://raw.githubusercontent.com/hyperledger/aries-rfcs/main/collateral/Hyperledger_Aries_Logo_White.png" alt="logo">
 
     </a>
-    Hyperledger Aries ACA-Py Docs
+    ACA-Py Docs
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/hyperledger/aries-cloudagent-python" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/openwallet-foundation/acapy" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    hyperledger/aries-cloudagent-python
+    openwallet-foundation/acapy
   </div>
 </a>
     </div>
@@ -391,6 +410,7 @@
   
   
   
+    
     
     
     
@@ -410,9 +430,16 @@
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Welcome!
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -421,30 +448,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Welcome!
+            
+  
+    Welcome!
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../aca-py.org/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Welcome
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -456,9 +466,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ACA-Py README
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -477,9 +494,16 @@
       <a href="../../CHANGELOG/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Release Notes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -498,9 +522,44 @@
       <a href="../../LTS-Strategy/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ACA-Py Long Term Support (LTS) Policy
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ACA-Py-OWF-Project-Mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACA-Py OpenWallet Foundation Project Mapping
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -527,6 +586,7 @@
     
     
     
+    
       
         
         
@@ -544,9 +604,16 @@
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Features
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -555,7 +622,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Features
+            
+  
+    Features
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -569,9 +640,16 @@
       <a href="../DevReadMe/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Developer Introduction
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -590,9 +668,16 @@
       <a href="../devcontainer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DevContainer Support
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -611,9 +696,16 @@
       <a href="../SupportedRFCs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Supported Aries Interop Profiles and RFCs
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -632,9 +724,72 @@
       <a href="../AdminAPI/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     The Admin API
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OAuthResourceServer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OAuth 2.0 Resource Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KanonStorage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanon Storage
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -653,9 +808,16 @@
       <a href="../PlugIns/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ACA-Py Plugins
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -674,9 +836,16 @@
       <a href="../Multitenancy/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Multitenant ACA-Py
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -695,9 +864,16 @@
       <a href="../QualifiedDIDs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Qualified DIDs
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -716,9 +892,16 @@
       <a href="../DIDMethods/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DID Methods
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -737,9 +920,72 @@
       <a href="../DIDResolution/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DID Resolution
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExternalSigners/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Signers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ReuseConnection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reusing DIDComm Connections Between Agents
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -758,9 +1004,16 @@
       <a href="../AnonCredsMethods/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Publishing AnonCreds Objects To Other Ledgers/Verifiable Data Registries
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -779,9 +1032,16 @@
       <a href="../Multiledger/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Configuring Multiple Indy Ledgers
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -800,9 +1060,16 @@
       <a href="../Endorser/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Automatically Endorsing Indy Transations
+    
+  
+    Automatically Endorsing Indy Transactions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -830,9 +1097,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     Using W3C JSON-LD Signed Credentials
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -841,9 +1115,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Using W3C JSON-LD Signed Credentials
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -866,7 +1147,9 @@
         <li class="md-nav__item">
   <a href="#table-of-contents" class="md-nav__link">
     <span class="md-ellipsis">
-      Table of Contents
+      
+        Table of Contents
+      
     </span>
   </a>
   
@@ -875,7 +1158,9 @@
         <li class="md-nav__item">
   <a href="#general-concept" class="md-nav__link">
     <span class="md-ellipsis">
-      General Concept
+      
+        General Concept
+      
     </span>
   </a>
   
@@ -885,7 +1170,9 @@
           <li class="md-nav__item">
   <a href="#bbs" class="md-nav__link">
     <span class="md-ellipsis">
-      BBS+
+      
+        BBS+
+      
     </span>
   </a>
   
@@ -899,7 +1186,9 @@
         <li class="md-nav__item">
   <a href="#preparing-to-issue-a-credential" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparing to Issue a Credential
+      
+        Preparing to Issue a Credential
+      
     </span>
   </a>
   
@@ -909,7 +1198,9 @@
           <li class="md-nav__item">
   <a href="#json-ld-context" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON-LD Context
+      
+        JSON-LD Context
+      
     </span>
   </a>
   
@@ -918,7 +1209,9 @@
           <li class="md-nav__item">
   <a href="#signature-suite" class="md-nav__link">
     <span class="md-ellipsis">
-      Signature Suite
+      
+        Signature Suite
+      
     </span>
   </a>
   
@@ -927,7 +1220,9 @@
           <li class="md-nav__item">
   <a href="#did-method" class="md-nav__link">
     <span class="md-ellipsis">
-      DID Method
+      
+        DID Method
+      
     </span>
   </a>
   
@@ -941,7 +1236,9 @@
         <li class="md-nav__item">
   <a href="#issuing-credentials" class="md-nav__link">
     <span class="md-ellipsis">
-      Issuing Credentials
+      
+        Issuing Credentials
+      
     </span>
   </a>
   
@@ -950,7 +1247,9 @@
         <li class="md-nav__item">
   <a href="#retrieving-issued-credentials" class="md-nav__link">
     <span class="md-ellipsis">
-      Retrieving Issued Credentials
+      
+        Retrieving Issued Credentials
+      
     </span>
   </a>
   
@@ -959,7 +1258,9 @@
         <li class="md-nav__item">
   <a href="#present-proof" class="md-nav__link">
     <span class="md-ellipsis">
-      Present Proof
+      
+        Present Proof
+      
     </span>
   </a>
   
@@ -968,7 +1269,9 @@
         <li class="md-nav__item">
   <a href="#vc-api" class="md-nav__link">
     <span class="md-ellipsis">
-      VC-API
+      
+        VC-API
+      
     </span>
   </a>
   
@@ -977,7 +1280,9 @@
         <li class="md-nav__item">
   <a href="#external-suite-provider" class="md-nav__link">
     <span class="md-ellipsis">
-      External Suite Provider
+      
+        External Suite Provider
+      
     </span>
   </a>
   
@@ -999,12 +1304,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../SelectiveDisclosureJWTs/" class="md-nav__link">
+      <a href="../W3cCredentials/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Using SD-JWTs
+    
+  
+    Issuing and Presenting W3C Data Integrity VCs
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1020,12 +1332,75 @@
   
   
     <li class="md-nav__item">
-      <a href="../AnoncredsProofValidation/" class="md-nav__link">
+      <a href="../SelectiveDisclosureJWTs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    AnonCreds Presentation Validation
+    
+  
+    Using SD-JWTs
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnonCredsProofValidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnonCreds Presentation Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AnonCredsRevocationAutoRecovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AnonCreds Revocation Auto Recovery
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1044,9 +1419,16 @@
       <a href="../Multicredentials/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Multiple Credential Types
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1065,9 +1447,16 @@
       <a href="../UsingOpenAPI/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Code Generation with the Open API
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1086,9 +1475,16 @@
       <a href="../Mediation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ACA-Py as a DIDComm Mediator
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1110,6 +1506,7 @@
   
   
   
+    
     
     
     
@@ -1129,9 +1526,16 @@
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Demos
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1140,7 +1544,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Demos
+            
+  
+    Demos
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1151,12 +1559,47 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demo/Aries-Workshop/" class="md-nav__link">
+      <a href="../../demo/ACA-Py-Workshop/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Hyperledger Aries / AnonCreds Workshop
+    
+  
+    ACA-Py / AnonCreds Workshop
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo/WebVH-Workshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACA-Py / AnonCreds / did:webvh Workshop
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1175,9 +1618,16 @@
       <a href="../../demo/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     The Alice-Faber Demo
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1193,12 +1643,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demo/AriesOpenAPIDemo/" class="md-nav__link">
+      <a href="../../demo/OpenAPIDemo/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Open API Tutorial
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1217,9 +1674,16 @@
       <a href="../../demo/AliceGetsAPhone/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Alice Gets a Phone
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1238,9 +1702,16 @@
       <a href="../../demo/Endorser/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Hyperledger Indy Endorser In Action
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1259,9 +1730,16 @@
       <a href="../../demo/AliceWantsAJsonCredential/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Using W3C JSON-LD Credentials
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1280,9 +1758,16 @@
       <a href="../../demo/AcmeDemoWorkshop/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DIY -- ACME Controller Workshop
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1298,12 +1783,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demo/AriesPostmanDemo/" class="md-nav__link">
+      <a href="../../demo/PostmanDemo/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Aries Using Postman Demo
+    
+  
+    ACA-Py Using Postman Demo
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1322,9 +1814,16 @@
       <a href="../../demo/ReusingAConnection/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Reusing a Connection Between Agents
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1346,6 +1845,7 @@
   
   
   
+    
     
     
     
@@ -1365,9 +1865,16 @@
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Getting Started
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1376,7 +1883,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Getting Started
+            
+  
+    Getting Started
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1390,9 +1901,16 @@
       <a href="../../gettingStarted/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Becoming an Indy/Aries Developer
+    
+  
+    Becoming an ACA-Py Developer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1411,9 +1929,16 @@
       <a href="../../gettingStarted/IndyBasics/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Hyperledger Indy Basics
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1429,12 +1954,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/AriesBasics/" class="md-nav__link">
+      <a href="../../gettingStarted/ACA-PyBasics/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Hyperledger Aries Basics
+    
+  
+    ACA-Py Basics
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1453,9 +1985,16 @@
       <a href="../../gettingStarted/DecentralizedIdentityDemos/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Decentralized Identity Demos
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1471,12 +2010,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/AriesBigPicture/" class="md-nav__link">
+      <a href="../../gettingStarted/ACA-PyBigPicture/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Aries - The Big Picture
+    
+  
+    ACA-Py - The Big Picture
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1492,12 +2038,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/AriesAgentArchitecture/" class="md-nav__link">
+      <a href="../../gettingStarted/ACA-PyAgentArchitecture/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Aries Architecture
+    
+  
+    ACA-Py Architecture
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1513,12 +2066,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/AriesMessaging/" class="md-nav__link">
+      <a href="../../gettingStarted/DIDCommMessaging/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Aries Messaging
+    
+  
+    ACA-Py Messaging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1534,12 +2094,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/AriesDeveloperDemos/" class="md-nav__link">
+      <a href="../../gettingStarted/ACA-PyDeveloperDemos/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Aries Developer Demos
+    
+  
+    ACA-Py Developer Demos
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1558,9 +2125,16 @@
       <a href="../../gettingStarted/AgentConnections/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Agent Connections
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1579,9 +2153,16 @@
       <a href="../../gettingStarted/IssuingAnonCredsCredentials/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Issuing AnonCreds Credentials
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1600,9 +2181,16 @@
       <a href="../../gettingStarted/PresentingAnonCredsProofs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Presenting AnonCreds Proofs
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1618,12 +2206,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/YourOwnAriesAgent/" class="md-nav__link">
+      <a href="../../gettingStarted/YourOwnACA-PyAgent/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Making Your Own ACA-Py Agent
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1639,12 +2234,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/IndyAriesDevOptions/" class="md-nav__link">
+      <a href="../../gettingStarted/IndyACA-PyDevOptions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Aries Developer Options
+    
+  
+    ACA-Py Developer Options
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1663,9 +2265,16 @@
       <a href="../../gettingStarted/DIDcommMsgs/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DIDComm Messaging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1684,9 +2293,16 @@
       <a href="../../gettingStarted/RoutingEncryption/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DIDComm Message Routing
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1702,12 +2318,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingStarted/AriesRoutingExample/" class="md-nav__link">
+      <a href="../../gettingStarted/DIDCommRoutingExample/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     DIDComm Message Routing Example
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1726,9 +2349,16 @@
       <a href="../../gettingStarted/ConnectIndyNetwork/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     TODO Connecting to an Indy Network
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1747,9 +2377,16 @@
       <a href="../../gettingStarted/CredentialRevocation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     AnonCreds Credential Revocation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1771,6 +2408,7 @@
   
   
   
+    
     
     
     
@@ -1790,9 +2428,16 @@
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Deploying
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1801,7 +2446,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Deploying
+            
+  
+    Deploying
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1815,9 +2464,16 @@
       <a href="../../deploying/deploymentModel/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Deployment Model
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1836,9 +2492,44 @@
       <a href="../../deploying/UpgradingACA-Py/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Upgrading ACA-Py
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deploying/upgradingToAipv2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrading ACA-Py from AIPv1 to AIPv2
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1857,9 +2548,16 @@
       <a href="../../deploying/BBSSignatures/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Enabling BBS Signatures support
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1878,9 +2576,16 @@
       <a href="../../deploying/IndySDKtoAskarMigration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Indy SDK to Askar Migration
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1896,12 +2601,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploying/AnoncredsControllerMigration/" class="md-nav__link">
+      <a href="../../deploying/AnonCredsControllerMigration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Controller Migration to use AnonCreds Rust
+    
+  
+    Controller Migration to use the askar-anoncreds Wallet Type
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1920,9 +2632,16 @@
       <a href="../../deploying/Poetry/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     The Use of Poetry in ACA-Py
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1941,9 +2660,16 @@
       <a href="../../deploying/ContainerImagesAndGithubActions/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ACA-Py Container Images
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1962,9 +2688,16 @@
       <a href="../../deploying/Databases/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Databases
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1983,9 +2716,16 @@
       <a href="../../deploying/RedisPlugins/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Persistent Queues and Caching
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2004,9 +2744,44 @@
       <a href="../../deploying/AnonCredsWalletType/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     The askar-anoncreds Wallet Type
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deploying/IndyToWebVHMigration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migrating AnonCreds Issuance from Indy to did:webvh
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2028,6 +2803,7 @@
   
   
   
+    
     
     
     
@@ -2047,9 +2823,16 @@
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Testing/Troubleshooting
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2058,7 +2841,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Testing/Troubleshooting
+            
+  
+    Testing/Troubleshooting
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2072,9 +2859,16 @@
       <a href="../../testing/UnitTests/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Running and Creating Unit Tests
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2093,9 +2887,16 @@
       <a href="../../testing/IntegrationTests/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Integration Tests
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2114,9 +2915,16 @@
       <a href="../../testing/Logging/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Managing Logging
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2135,9 +2943,16 @@
       <a href="../../testing/BDDTests/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ACA-Py Integration BDD Tests
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2156,9 +2971,16 @@
       <a href="../../testing/AgentTracing/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Protocol Tracing
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2177,9 +2999,16 @@
       <a href="../../testing/Troubleshooting/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Troubleshooting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2204,6 +3033,7 @@
     
     
     
+    
       
       
     
@@ -2220,9 +3050,16 @@
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Contributing
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2231,7 +3068,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Contributing
+            
+  
+    Contributing
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2245,9 +3086,16 @@
       <a href="../../CONTRIBUTING/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     How to Contribute
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2266,9 +3114,44 @@
       <a href="../../MAINTAINERS/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Maintainers
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GOVERNANCE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2287,9 +3170,16 @@
       <a href="../../CODE_OF_CONDUCT/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Hyperledger Code of Conduct
+    
+  
+    Code of Conduct
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2308,9 +3198,16 @@
       <a href="../../SECURITY/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Security Vulnerability Reporting
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2329,9 +3226,16 @@
       <a href="../../PUBLISHING/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Publishing an ACA-Py Release
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2350,9 +3254,16 @@
       <a href="../../Managing-ACA-Py-Doc-Site/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Managing the ACA-Py Documentation Site
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2371,9 +3282,16 @@
       <a href="../../UpdateRTD/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Updating the ACA-Py ReadTheDocs Site
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2418,7 +3336,9 @@
         <li class="md-nav__item">
   <a href="#table-of-contents" class="md-nav__link">
     <span class="md-ellipsis">
-      Table of Contents
+      
+        Table of Contents
+      
     </span>
   </a>
   
@@ -2427,7 +3347,9 @@
         <li class="md-nav__item">
   <a href="#general-concept" class="md-nav__link">
     <span class="md-ellipsis">
-      General Concept
+      
+        General Concept
+      
     </span>
   </a>
   
@@ -2437,7 +3359,9 @@
           <li class="md-nav__item">
   <a href="#bbs" class="md-nav__link">
     <span class="md-ellipsis">
-      BBS+
+      
+        BBS+
+      
     </span>
   </a>
   
@@ -2451,7 +3375,9 @@
         <li class="md-nav__item">
   <a href="#preparing-to-issue-a-credential" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparing to Issue a Credential
+      
+        Preparing to Issue a Credential
+      
     </span>
   </a>
   
@@ -2461,7 +3387,9 @@
           <li class="md-nav__item">
   <a href="#json-ld-context" class="md-nav__link">
     <span class="md-ellipsis">
-      JSON-LD Context
+      
+        JSON-LD Context
+      
     </span>
   </a>
   
@@ -2470,7 +3398,9 @@
           <li class="md-nav__item">
   <a href="#signature-suite" class="md-nav__link">
     <span class="md-ellipsis">
-      Signature Suite
+      
+        Signature Suite
+      
     </span>
   </a>
   
@@ -2479,7 +3409,9 @@
           <li class="md-nav__item">
   <a href="#did-method" class="md-nav__link">
     <span class="md-ellipsis">
-      DID Method
+      
+        DID Method
+      
     </span>
   </a>
   
@@ -2493,7 +3425,9 @@
         <li class="md-nav__item">
   <a href="#issuing-credentials" class="md-nav__link">
     <span class="md-ellipsis">
-      Issuing Credentials
+      
+        Issuing Credentials
+      
     </span>
   </a>
   
@@ -2502,7 +3436,9 @@
         <li class="md-nav__item">
   <a href="#retrieving-issued-credentials" class="md-nav__link">
     <span class="md-ellipsis">
-      Retrieving Issued Credentials
+      
+        Retrieving Issued Credentials
+      
     </span>
   </a>
   
@@ -2511,7 +3447,9 @@
         <li class="md-nav__item">
   <a href="#present-proof" class="md-nav__link">
     <span class="md-ellipsis">
-      Present Proof
+      
+        Present Proof
+      
     </span>
   </a>
   
@@ -2520,7 +3458,9 @@
         <li class="md-nav__item">
   <a href="#vc-api" class="md-nav__link">
     <span class="md-ellipsis">
-      VC-API
+      
+        VC-API
+      
     </span>
   </a>
   
@@ -2529,7 +3469,9 @@
         <li class="md-nav__item">
   <a href="#external-suite-provider" class="md-nav__link">
     <span class="md-ellipsis">
-      External Suite Provider
+      
+        External Suite Provider
+      
     </span>
   </a>
   
@@ -2545,16 +3487,18 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
+
 
   
   
 
 
 <h1 id="json-ld-credentials-in-aca-py">JSON-LD Credentials in ACA-Py <!-- omit in toc --><a class="headerlink" href="#json-ld-credentials-in-aca-py" title="Permanent link">&para;</a></h1>
-<p>By design Hyperledger Aries is credential format agnostic. This means you can use it for any credential format, as long as an RFC is defined for the specific credential format. ACA-Py currently supports two types of credentials, Indy and JSON-LD credentials. This document describes how to use the latter by making use of <a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials</a> using <a href="https://w3c-ccg.github.io/ld-proofs">Linked Data Proofs</a>.</p>
+<p>By design ACA-Py is credential format agnostic. This means you can use it for any credential format, as long as an RFC is defined for the specific credential format. ACA-Py currently supports two types of credentials, AnonCreds and JSON-LD credentials. This document describes how to use the latter by making use of <a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials</a> using <a href="https://w3c-ccg.github.io/ld-proofs">Linked Data Proofs</a>.</p>
 <h2 id="table-of-contents">Table of Contents <!-- omit in toc --><a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#general-concept">General Concept</a></li>
@@ -2565,8 +3509,7 @@
 </ul>
 </li>
 <li><a href="#signature-suite">Signature Suite</a></li>
-<li><a href="#did-method">Did Method</a><ul>
-<li><a href="#didsov"><code>did:sov</code></a></li>
+<li><a href="#did-method">DID Method</a><ul>
 <li><a href="#didkey"><code>did:key</code></a></li>
 </ul>
 </li>
@@ -2574,19 +3517,20 @@
 <li><a href="#retrieving-issued-credentials">Retrieving Issued Credentials</a></li>
 <li><a href="#present-proof">Present Proof</a></li>
 <li><a href="#vc-api">VC-API</a></li>
+<li><a href="#external-suite-provider">External Suite Provider</a></li>
 </ul>
 <h2 id="general-concept">General Concept<a class="headerlink" href="#general-concept" title="Permanent link">&para;</a></h2>
 <p>The rest of this guide assumes some basic understanding of W3C Verifiable Credentials, JSON-LD and Linked Data Proofs. If you're not familiar with some of these concepts, the following resources can help you get started:</p>
 <ul>
 <li><a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials Data Model</a></li>
-<li><a href="https://json-ld.org/learn.html">JSON-LD Articles and Presentations</a></li>
+<li><a href="https://json-ld.org/learn/">JSON-LD Articles and Presentations</a></li>
 <li><a href="https://w3c-ccg.github.io/ld-proofs">Linked Data Proofs</a></li>
 </ul>
 <h3 id="bbs">BBS+<a class="headerlink" href="#bbs" title="Permanent link">&para;</a></h3>
-<p>BBS+ credentials offer a lot of privacy preserving features over non-ZKP credentials. Therefore we recommend to always use BBS+ credentials over non-ZKP credentials. To get started with BBS+ credentials it is recommended to at least read <a href="https://github.com/hyperledger/aries-rfcs/blob/master/features/0646-bbs-credentials/README.md">RFC 0646: W3C Credential Exchange using BBS+ Signatures</a> for a general overview.</p>
+<p>BBS+ credentials offer a lot of privacy preserving features over non-ZKP credentials. Therefore we recommend to always use BBS+ credentials over non-ZKP credentials. To get started with BBS+ credentials it is recommended to at least read <a href="https://github.com/decentralized-identity/aries-rfcs/blob/main/features/0646-bbs-credentials/README.md">RFC 0646: W3C Credential Exchange using BBS+ Signatures</a> for a general overview.</p>
 <p>Some other resources that can help you get started with BBS+ credentials:</p>
 <ul>
-<li><a href="https://w3c-ccg.github.io/ldp-bbs2020">BBS+ Signatures 2020</a></li>
+<li><a href="https://w3c.github.io/vc-di-bbs/">BBS+ Signatures</a></li>
 <li><a href="https://www.youtube.com/watch?v=LC0OXAir3Qw">Video: BBS+ Credential Exchange in Hyperledger Aries</a></li>
 </ul>
 <h2 id="preparing-to-issue-a-credential">Preparing to Issue a Credential<a class="headerlink" href="#preparing-to-issue-a-credential" title="Permanent link">&para;</a></h2>
@@ -2598,9 +3542,9 @@
 </blockquote>
 <p>For credentials the <code>https://www.w3.org/2018/credentials/v1</code> context MUST always be the first context. In addition, when issuing BBS+ credentials the <code>https://w3id.org/security/bbs/v1</code> URL MUST be present in the context. For convenience this URL will be automatically added to the <code>@context</code> of the credential if not present.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="s2">&quot;https://other-contexts.com&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s2">"https://www.w3.org/2018/credentials/v1"</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="s2">"https://other-contexts.com"</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p">]</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
 </code></pre></div>
@@ -2618,24 +3562,21 @@
 <ul>
 <li><a href="https://w3c-ccg.github.io/lds-ed25519-2018/"><code>Ed25519Signature2018</code></a> - Very well supported. No zero knowledge proofs or selective disclosure.</li>
 <li><a href="https://w3c.github.io/vc-di-eddsa/#ed25519signature2020-0"><code>Ed25519Signature2020</code></a> - Updated version of 2018 suite.</li>
-<li><a href="https://w3c-ccg.github.io/ldp-bbs2020/"><code>BbsBlsSignature2020</code></a> - Newer, but supports zero knowledge proofs and selective disclosure.</li>
+<li><a href="https://w3c.github.io/vc-di-bbs/"><code>BbsBlsSignature2020</code></a> - Newer, but supports zero knowledge proofs and selective disclosure.</li>
 </ul>
 <p>Generally you should always use <code>BbsBlsSignature2020</code> as it allows the holder to derive a new credential during the proving, meaning it doesn't have to disclose all fields and doesn't have to reveal the signature.</p>
 <h3 id="did-method">DID Method<a class="headerlink" href="#did-method" title="Permanent link">&para;</a></h3>
 <p>Besides the JSON-LD context, we need a DID to use for issuing the credential. ACA-Py currently supports two did methods for issuing credentials:</p>
 <ul>
-<li><code>did:sov</code> - Can only be used for <code>Ed25519Signature2018</code> signature suite.</li>
 <li><code>did:key</code> - Can be used for both <code>Ed25519Signature2018</code> and <code>BbsBlsSignature2020</code> signature suites.</li>
 </ul>
-<h4 id="didsov"><code>did:sov</code><a class="headerlink" href="#didsov" title="Permanent link">&para;</a></h4>
-<p>When using <code>did:sov</code> you need to make sure to use a public did so other agents can resolve the did. It is also important the other agent is using the same indy ledger for resolving the did. You can get the public did using the <code>/wallet/did/public</code> endpoint. For backwards compatibility the did is returned without <code>did:sov</code> prefix. When using the did for issuance make sure this prepend this to the did. (so <code>DViYrCMPWfuLiY7LLs8giB</code> becomes <code>did:sov:DViYrCMPWfuLiY7LLs8giB</code>)</p>
 <h4 id="didkey"><code>did:key</code><a class="headerlink" href="#didkey" title="Permanent link">&para;</a></h4>
-<p>A <code>did:key</code> did is not anchored to a ledger, but embeds the key directly in the identifier part of the did. See the <a href="https://w3c-ccg.github.io/did-method-key/">did:key Method Specification</a> for more information.</p>
+<p>A <code>did:key</code> did is not anchored to a ledger, but embeds the key directly in the identifier part of the did. See the <a href="https://w3c-ccg.github.io/did-key-spec/">did:key Method Specification</a> for more information.</p>
 <p>You can create a <code>did:key</code> using the <code>/wallet/did/create</code> endpoint with the following body. Use <code>ed25519</code> for <code>Ed25519Signature2018</code>, <code>bls12381g2</code> for <code>BbsBlsSignature2020</code>.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &quot;method&quot;: &quot;key&quot;,
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  &quot;options&quot;: {
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    &quot;key_type&quot;: &quot;bls12381g2&quot; // or ed25519
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  "method": "key",
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  "options": {
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    "key_type": "bls12381g2" // or ed25519
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  }
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>}
 </code></pre></div>
@@ -2644,7 +3585,7 @@
 <blockquote>
 <p>Issuing JSON-LD credentials is only possible with the issue credential v2 protocol (<code>/issue-credential-2.0</code>)</p>
 </blockquote>
-<p>The format used for exchanging JSON-LD credentials is defined in <a href="https://github.com/hyperledger/aries-rfcs/tree/master/features/0593-json-ld-cred-attach/README.md">RFC 0593: JSON-LD Credential Attachment format</a>. The API in ACA-Py exactly matches the formats as described in this RFC, with the most important (from the ACA-Py API perspective) being <a href="https://github.com/hyperledger/aries-rfcs/blob/master/features/0593-json-ld-cred-attach/README.md#ld-proof-vc-detail-attachment-format"><code>aries/ld-proof-vc-detail@v1.0</code></a>. Read the RFC to see the exact properties required to construct a valid Linked Data Proof VC Detail.</p>
+<p>The format used for exchanging JSON-LD credentials is defined in <a href="https://github.com/decentralized-identity/aries-rfcs/tree/main/features/0593-json-ld-cred-attach/README.md">RFC 0593: JSON-LD Credential Attachment format</a>. The API in ACA-Py exactly matches the formats as described in this RFC, with the most important (from the ACA-Py API perspective) being <a href="https://github.com/decentralized-identity/aries-rfcs/blob/main/features/0593-json-ld-cred-attach/README.md#ld-proof-vc-detail-attachment-format"><code>aries/ld-proof-vc-detail@v1.0</code></a>. Read the RFC to see the exact properties required to construct a valid Linked Data Proof VC Detail.</p>
 <p>All endpoints in API use the <code>aries/ld-proof-vc-detail@v1.0</code>. We'll use the <code>/issue-credential-2.0/send</code> as an example, but it works the same for the other endpoints. In contrary to issuing indy credentials, JSON-LD credentials do not require a credential preview. All properties should be directly embedded in the credentials.</p>
 <p>The detail should be included under the <code>filter.ld_proof</code> property. To issue a credential call the <code>/issue-credential-2.0/send</code> endpoint, with the example body below and the <code>connection_id</code> and <code>issuer</code> keys replaced. The value of <code>issuer</code> should be the did that you created in the <a href="#did-method">Did Method</a> paragraph above.</p>
 <p>If you don't have <code>auto-respond-credential-offer</code> and <code>auto-store-credential</code> enabled in the ACA-Py config, you will need to call <code>/issue-credential-2.0/records/{cred_ex_id}/send-request</code> and <code>/issue-credential-2.0/records/{cred_ex_id}/store</code> to finalize the credential issuance.</p>
@@ -2652,27 +3593,27 @@
 <summary>See the example body</summary>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  &quot;connection_id&quot;: &quot;ddc23de9-359f-465c-b66e-f7c5a0cc9a57&quot;,
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  &quot;filter&quot;: {
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    &quot;ld_proof&quot;: {
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      &quot;credential&quot;: {
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        &quot;@context&quot;: [
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>          &quot;https://www.w3.org/2018/credentials/v1&quot;,
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>          &quot;https://www.w3.org/2018/credentials/examples/v1&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  "connection_id": "ddc23de9-359f-465c-b66e-f7c5a0cc9a57",
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  "filter": {
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    "ld_proof": {
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>      "credential": {
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        "@context": [
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>          "https://www.w3.org/2018/credentials/v1",
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>          "https://www.w3.org/2018/credentials/examples/v1"
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        ],
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        &quot;type&quot;: [&quot;VerifiableCredential&quot;, &quot;UniversityDegreeCredential&quot;],
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        &quot;issuer&quot;: &quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;,
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        &quot;issuanceDate&quot;: &quot;2020-01-01T12:00:00Z&quot;,
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        &quot;credentialSubject&quot;: {
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>          &quot;degree&quot;: {
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            &quot;type&quot;: &quot;BachelorDegree&quot;,
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>            &quot;name&quot;: &quot;Bachelor of Science and Arts&quot;
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        "type": ["VerifiableCredential", "UniversityDegreeCredential"],
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        "issuer": "did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj",
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        "issuanceDate": "2020-01-01T12:00:00Z",
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        "credentialSubject": {
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>          "degree": {
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            "type": "BachelorDegree",
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>            "name": "Bachelor of Science and Arts"
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>          },
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>          &quot;college&quot;: &quot;Faber College&quot;
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>          "college": "Faber College"
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        }
 <a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>      },
-<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>      &quot;options&quot;: {
-<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        &quot;proofType&quot;: &quot;BbsBlsSignature2020&quot;
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>      "options": {
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        "proofType": "BbsBlsSignature2020"
 <a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>      }
 <a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    }
 <a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>  }
@@ -2689,44 +3630,44 @@
 <summary>See the example response</summary>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">&quot;contexts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="s2">&quot;https://www.w3.org/2018/credentials/examples/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="s2">&quot;https://w3id.org/security/bbs/v1&quot;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nt">"contexts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="s2">"https://www.w3.org/2018/credentials/examples/v1"</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="s2">"https://www.w3.org/2018/credentials/v1"</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">        </span><span class="s2">"https://w3id.org/security/bbs/v1"</span>
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p">],</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="nt">&quot;types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;UniversityDegreeCredential&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">],</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="nt">&quot;schema_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="nt">&quot;issuer_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="nt">&quot;subject_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="nt">&quot;proof_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;BbsBlsSignature2020&quot;</span><span class="p">],</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="nt">&quot;cred_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">          </span><span class="s2">&quot;https://www.w3.org/2018/credentials/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">          </span><span class="s2">&quot;https://www.w3.org/2018/credentials/examples/v1&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">          </span><span class="s2">&quot;https://w3id.org/security/bbs/v1&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="nt">"types"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"UniversityDegreeCredential"</span><span class="p">,</span><span class="w"> </span><span class="s2">"VerifiableCredential"</span><span class="p">],</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="nt">"schema_ids"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">      </span><span class="nt">"issuer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj"</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="nt">"subject_ids"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="nt">"proof_types"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"BbsBlsSignature2020"</span><span class="p">],</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="nt">"cred_value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">          </span><span class="s2">"https://www.w3.org/2018/credentials/v1"</span><span class="p">,</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">          </span><span class="s2">"https://www.w3.org/2018/credentials/examples/v1"</span><span class="p">,</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">          </span><span class="s2">"https://w3id.org/security/bbs/v1"</span>
 <a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span><span class="p">],</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;VerifiableCredential&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;UniversityDegreeCredential&quot;</span><span class="p">],</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">        </span><span class="nt">&quot;issuer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">        </span><span class="nt">&quot;issuanceDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-01-01T12:00:00Z&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="nt">&quot;credentialSubject&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">          </span><span class="nt">&quot;degree&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BachelorDegree&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bachelor of Science and Arts&quot;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"VerifiableCredential"</span><span class="p">,</span><span class="w"> </span><span class="s2">"UniversityDegreeCredential"</span><span class="p">],</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">        </span><span class="nt">"issuer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj"</span><span class="p">,</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">        </span><span class="nt">"issuanceDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-01-01T12:00:00Z"</span><span class="p">,</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="nt">"credentialSubject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">          </span><span class="nt">"degree"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BachelorDegree"</span><span class="p">,</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bachelor of Science and Arts"</span>
 <a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">          </span><span class="p">},</span>
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">          </span><span class="nt">&quot;college&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Faber College&quot;</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">          </span><span class="nt">"college"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Faber College"</span>
 <a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">        </span><span class="p">},</span>
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">        </span><span class="nt">&quot;proof&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BbsBlsSignature2020&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">          </span><span class="nt">&quot;proofPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;assertionMethod&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">          </span><span class="nt">&quot;verificationMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj#zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">          </span><span class="nt">&quot;created&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-05-03T12:31:28.561945&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">          </span><span class="nt">&quot;proofValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;iUFtRGdLLCWxKx8VD3oiFBoRMUFKhSitTzMsfImXm6OF0d8il+Z40aLz8S7m8EcXPQhRjcWWL9jkfcf1SDifD4CvxVg69NvB7hZyIIz9hwAyi3LmTm0ez4NDRCKyieBuzqKbfM2eACWn/ilhOJBm6w==&quot;</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">        </span><span class="nt">"proof"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">          </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BbsBlsSignature2020"</span><span class="p">,</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">          </span><span class="nt">"proofPurpose"</span><span class="p">:</span><span class="w"> </span><span class="s2">"assertionMethod"</span><span class="p">,</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">          </span><span class="nt">"verificationMethod"</span><span class="p">:</span><span class="w"> </span><span class="s2">"did:key:zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj#zUC7FsmhhifDTuYXdwYES2UpCpWwYieJRapC6oEWqyt5KfJ3ztfLzYnbWjuXQ5drYaKaho3FjxrfDB81gtAJKjbM4yAmBuNoj3YKDXqW151KkkYarpEoEVWMMcN5zPfjCrQ8Saj"</span><span class="p">,</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">          </span><span class="nt">"created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-05-03T12:31:28.561945"</span><span class="p">,</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">          </span><span class="nt">"proofValue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iUFtRGdLLCWxKx8VD3oiFBoRMUFKhSitTzMsfImXm6OF0d8il+Z40aLz8S7m8EcXPQhRjcWWL9jkfcf1SDifD4CvxVg69NvB7hZyIIz9hwAyi3LmTm0ez4NDRCKyieBuzqKbfM2eACWn/ilhOJBm6w=="</span>
 <a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">        </span><span class="p">}</span>
 <a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">      </span><span class="nt">&quot;cred_tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
-<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">      </span><span class="nt">&quot;record_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;541ddbce5760497d98e68917be8c05bd&quot;</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">      </span><span class="nt">"cred_tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">      </span><span class="nt">"record_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"541ddbce5760497d98e68917be8c05bd"</span>
 <a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">  </span><span class="p">]</span>
 <a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="p">}</span>
@@ -2736,7 +3677,7 @@
 
 <h2 id="present-proof">Present Proof<a class="headerlink" href="#present-proof" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>⚠️ TODO: <a href="https://github.com/hyperledger/aries-cloudagent-python/pull/1125">https://github.com/hyperledger/aries-cloudagent-python/pull/1125</a></p>
+<p>⚠️ TODO: <a href="https://github.com/openwallet-foundation/acapy/pull/1125">https://github.com/openwallet-foundation/acapy/pull/1125</a></p>
 </blockquote>
 <h2 id="vc-api">VC-API<a class="headerlink" href="#vc-api" title="Permanent link">&para;</a></h2>
 <p>In order to support these functions outside of the respective DIDComm protocols, a set of endpoints conforming to the <a href="https://w3c-ccg.github.io/vc-api">vc-api</a> specification are available. These endpoints should be used by a controller when building an identity platform.</p>
@@ -2750,9 +3691,9 @@
 <li><code>POST /vc/presentations/prove</code> -&gt; proves a presentation</li>
 <li><code>POST /vc/presentations/verify</code> -&gt; verifies a presentation</li>
 </ul>
-<p>To learn more about using these endpoints, please refer to the available <a href="../../demo/AriesPostmanDemo/#experimenting-with-the-vc-api-endpoints">postman collection</a>.</p>
+<p>To learn more about using these endpoints, please refer to the available <a href="../../demo/PostmanDemo/#experimenting-with-the-vc-api-endpoints">postman collection</a>.</p>
 <h2 id="external-suite-provider">External Suite Provider<a class="headerlink" href="#external-suite-provider" title="Permanent link">&para;</a></h2>
-<p>It is possible to extend the signature suite support, including outsourcing signing JSON-LD Credentials to some other component (KMS, HSM, etc.), using the <a href="https://github.com/hyperledger/aries-cloudagent-python/blob/d3ee92b1b86aff076b52f31eaecea59c18005079/aries_cloudagent/vc/vc_ld/external_suite.py#L27"><code>ExternalSuiteProvider</code> interface</a>. This interface can be implemented and registered via plugin. The plugged in provider will be used by ACA-Py's LDP-VC subsystem to create a <code>LinkedDataProof</code> object, which is responsible for signing normalized credential values.</p>
+<p>It is possible to extend the signature suite support, including outsourcing signing JSON-LD Credentials to some other component (KMS, HSM, etc.), using the <a href="https://github.com/openwallet-foundation/acapy/blob/4b13df29b1c14207965975b1e86d828a607fae1d/acapy_agent/vc/vc_ld/external_suite.py#L27"><code>ExternalSuiteProvider</code> interface</a>. This interface can be implemented and registered via plugin. The plugged in provider will be used by ACA-Py's LDP-VC subsystem to create a <code>LinkedDataProof</code> object, which is responsible for signing normalized credential values.</p>
 <p>This interface enables taking advantage of ACA-Py's JSON-LD processing to construct and format the credential while exposing a simple interface to a plugin to make it responsible for signatures. This can also be combined with plugged in DID Methods, <code>VerificationKeyStrategy</code>, and other pluggable components.</p>
 <p>See this example project here for more details on the interface and its usage: <a href="https://github.com/dbluhm/acapy-ld-signer">https://github.com/dbluhm/acapy-ld-signer</a></p>
 
@@ -2790,7 +3731,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Endorser/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Automatically Endorsing Indy Transations">
+          <a href="../Endorser/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Automatically Endorsing Indy Transactions">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2800,20 +3741,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Automatically Endorsing Indy Transations
+                Automatically Endorsing Indy Transactions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../SelectiveDisclosureJWTs/" class="md-footer__link md-footer__link--next" aria-label="Next: Using SD-JWTs">
+          <a href="../W3cCredentials/" class="md-footer__link md-footer__link--next" aria-label="Next: Issuing and Presenting W3C Data Integrity VCs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Using SD-JWTs
+                Issuing and Presenting W3C Data Integrity VCs
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2847,10 +3788,13 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.footer", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>
